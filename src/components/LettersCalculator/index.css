@@ -1,0 +1,105 @@
+/* Write your code here. */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  padding: 30px;
+}
+
+.image {
+  height: 300px;
+}
+
+.part2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.h1 {
+  font-family: roboto;
+  font-size: 35px;
+  color: white;
+}
+
+.label {
+  margin: 5px;
+  margin-left: 25px;
+  padding: 0px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  font-family: roboto;
+  align-self: flex-start;
+}
+
+.inputElement {
+  outline: none;
+  width: 85%;
+  height: 40px;
+  border-style: solid;
+  font-size: 18px;
+  padding: 10px;
+  background-color: transparent;
+  border-color: white;
+  font-family: roboto;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+::placeholder {
+  color: black;
+  font-weight: normal;
+}
+
+.p2 {
+  margin: 50px;
+  padding: 15px;
+  background-color: white;
+  font-family: roboto;
+  font-weight: 900;
+  font-size: 30px;
+  color: #219a6f;
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: 992px) {
+  .main {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .part1 {
+    order: 1;
+  }
+  .part2 {
+    width: 40%;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .image {
+    height: 500px;
+  }
+  .h1 {
+    font-size: 50px;
+  }
+
+  .label {
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .inputElement {
+    height: 60px;
+    font-size: 30px;
+  }
+  .p2 {
+    margin-left: 0px;
+  }
+}
